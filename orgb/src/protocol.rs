@@ -1,7 +1,7 @@
 #![allow(non_upper_case_globals)] // Make rust-analyzer stfu
 
-use std::io::{Read, Write};
 use num_enum::{IntoPrimitive, TryFromPrimitive};
+use std::io::{Read, Write};
 
 #[derive(Debug, Clone, Copy, IntoPrimitive, TryFromPrimitive, PartialEq, Eq)]
 #[repr(u32)]

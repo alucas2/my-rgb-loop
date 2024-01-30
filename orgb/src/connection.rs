@@ -78,7 +78,7 @@ impl Connection {
     }
 
     /// Returns the flag that indicates when the list of devices has been updated, then resets the flag.
-    /// 
+    ///
     /// If the flag is raised, it means that the controllers must be requested again.
     pub fn devices_updated_reset(&self) -> bool {
         self.devices_updated.swap(false, Ordering::Relaxed)
